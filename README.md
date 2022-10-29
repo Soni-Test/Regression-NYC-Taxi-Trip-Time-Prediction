@@ -11,7 +11,14 @@ The dataset is based on the 2016 NYC Yellow Cab trip record data made available 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Content 
+## Steps Involved
+
+Uploading Dataset from GitHUb repository
+Data Cleaning 
+Expolatory Data Analysis (EDA)
+Feature Engineering 
+Model Building 
+Model Evaluation 
 
 
 
