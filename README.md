@@ -1,5 +1,7 @@
 # **Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction**
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1RjJpB2QjckFbld9v3hl7w6bs06uGti9c?usp=sharing)
+
 ![image](https://user-images.githubusercontent.com/107030716/198834150-38d3f6c7-5d43-4da6-b0f1-051162911ad0.png)
 
 
