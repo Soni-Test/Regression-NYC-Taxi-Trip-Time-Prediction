@@ -13,12 +13,12 @@ The dataset is based on the 2016 NYC Yellow Cab trip record data made available 
 
 ## Steps Involved
 
-Uploading Dataset from GitHUb repository \n
-Data Cleaning \n
-Expolatory Data Analysis (EDA) n/
-Feature Engineering 
-Model Building 
-Model Evaluation 
+1. [**Uploading Dataset from GitHUb repository**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
+2. Data Cleaning 
+3. Expolatory Data Analysis (EDA) 
+4. Feature Engineering 
+5. Model Building 
+6. Model Evaluation 
 
 
 
