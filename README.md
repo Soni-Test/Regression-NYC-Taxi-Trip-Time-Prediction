@@ -26,4 +26,6 @@ The dataset is based on the 2016 NYC Yellow Cab trip record data made available 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Acknowledgements 
 
-##### © Copyright ![image](https://user-images.githubusercontent.com/107030716/198835256-2c893b19-39a0-4f2d-857f-b01b3fafac05.png)
+##### © Copyright
+![image](https://user-images.githubusercontent.com/107030716/198835325-f3e1f465-d56d-4af2-9847-75ec15f1c311.png)
+
