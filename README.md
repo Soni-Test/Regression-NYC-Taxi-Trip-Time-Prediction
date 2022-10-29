@@ -2,7 +2,8 @@
 The dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was originally published by the NYC Taxi and Limousine Commission (TLC). 
 
 
-https://s.abcnews.com/images/US/taxi-gty-er-190801_hpMain_2_16x9_992.jpg
+![image](https://user-images.githubusercontent.com/107030716/198834150-38d3f6c7-5d43-4da6-b0f1-051162911ad0.png)
+
 
 
 
