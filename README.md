@@ -9,32 +9,41 @@
 
 
 ## Summary 
-The dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was originally published by the NYC Taxi and Limousine Commission (TLC). The complete dataset consist of 1458644 & 11 rows and columns, consisting of different features. The major purpose of doing this project will help in predicting the average trip duration of passengers which will help them in saving their time from future trips as well as money, as it is well known for everyone the heavy traffic problem in New York City (NYC). Taxi agencies will also try to improve their service further as they are also getting tough competitions from app-based companies like lyft and uber. 
+The dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was originally published by the NYC Taxi and Limousine Commission (TLC). The complete dataset consist of 1458644 & 11 rows and columns, consisting of different features. The major purpose of doing this project will help in predicting the average trip duration of passengers which will help them in saving their time from future trips as well as money, as it is well known for everyone the heavy traffic problem in New York City (NYC). Taxi agencies will also try to improve their service further as they are also getting tough competitions from app-based companies like lyft and uber. </br> 
 
+
+## Problem Statement
+The task is to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset is one released by the NYC Taxi and Limousine Commission, which includes pickup time, geo-coordinates, number of passengers, and several other variables. </br>
 
 
 ## Steps Involved
 
-1. [**Uploading Dataset from GitHub repository**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-2. [**Data Cleaning**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-3. [**Expolatory Data Analysis (EDA)**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-4. [**Feature Engineering**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-5. [**Model Building**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-6. [**Model Evaluation**](https://github.com/Soni-Test/Supervised-ML-Regression-NYC-Taxi-Trip-Time-Prediction/blob/main/NYC_Taxi_Trip_Time_Prediction_Capstone_Project.ipynb)
-
+1. Uploading Dataset from GitHub repository
+2. Data Cleaning
+3. Expolatory Data Analysis (EDA)
+4. Feature Engineering
+5. Model Building
+6. Model Evaluation
 
 
 ## Model used in study 
 
-1. [Linear Regression]
-2. [Lasso Regression]
-3. [Ridge Regression]
-4. [XGBoost Regression]
-5. [Decision Tree Regression]
-6. [Random Forest Regression]
+1. Linear Regression
+2. Lasso Regression
+3. Ridge Regression
+4. XGBoost Regression
+5. Decision Tree Regression
+6. Random Forest Regression
 
 
+## Conclusion 
+The present analysis of NYC taxi trip time prediction using supervised regression method was quite challenging but it provided us lots of insights. As the dataset is huge, so I have use different regression models to get the better prediction.
 
+* Firstly, their is not much difference between the train and test values of Linear Regression, Lasso Regression, Ridge Regression during the MSE, RMSE.
+* But the model performance of the above mentioned regression models suddenly increases for R^2 and Adjusted R^2 value.
+* The model performance for the Decision Tree Rregressor, XGBoost Regressor and Random Forest Regressor finally showed some good performance in both train and test data for MSE, RMSE.
+* For R^2 and Adjusted R^2 all above mentioned regressors showed a better running model.
+* But among all the used models for ML regression analysis, XGBoost Regressor showed the best performance with 80.72% in test R^2 value and 83.31% in train R^2.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
