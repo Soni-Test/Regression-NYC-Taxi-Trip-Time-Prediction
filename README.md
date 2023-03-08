@@ -15,15 +15,31 @@ The dataset is based on the 2016 NYC Yellow Cab trip record data made available 
 ## Problem Statement
 The task is to build a model that predicts the total ride duration of taxi trips in New York City. The primary dataset is one released by the NYC Taxi and Limousine Commission, which includes pickup time, geo-coordinates, number of passengers, and several other variables. </br>
 
+## Data Summary
+The dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was originally published by the NYC Taxi and Limousine commission (TLC). ### The contents of NYC Taxi Time Prediction are:
+* id - a unique identifier for each trip.
+* vendor_id - a code indicating the provider associated with the trip record.
+* pickup_datetime - date and time when the meter was engaged.
+* dropoff_datetime - date and time when the meter was disengaged.
+* passenger_count - the number of passengers in the vehicle (driver entered value).
+* pickup_longitude - the longitude where the meter was engaged.
+* pickup_latitude - the latitude where the meter was engaged.
+* dropoff_longitude - the longitude where the meter was disengaged.
+* dropoff_latitude - the latitude where the meter was disengaged.
+* store_and_fwd_flag - This flag indicates whether the trip record was held in vehicle memory before sending to the vendor because the vehicle did not have a connection to the server - Y=store and forward; N=not a store and forward trip.
+* trip_duration - duration of the trip in seconds. 
+
+## Exploring solution of the problem
+Having a deeper understanding of what problem we are trying to solve, what the users’ needs, and frustrations are, and what the goals are for achieving the best possible solution for both for the business as well as the user, I began by listing out the possible solutions that were arrived from the research.
 
 ## Steps Involved
 
-1. Uploading Dataset from GitHub repository
-2. Data Cleaning
-3. Expolatory Data Analysis (EDA)
-4. Feature Engineering
-5. Model Building
-6. Model Evaluation
+1. Uploading Dataset from GitHub repository - We have loaded the data from the given csv files using a function from pandas library. Then we checked the general information about data. </br> 
+2. Data Cleaning - No issue came up regarding cleaning of dataset, as it was clean. 
+3. Expolatory Data Analysis (EDA) - Calculated the distance based on haversine formula from pickup and drop-off latitude and longitude. Then we plotted the box plot for the variable and observed there are many outlier so we segregate this variable and see that most of the trip are within 10km, some trip are within 50km while a very few trip crosses 100km. so we eliminate trip with 0 and above 100km distance. Similary for the average speed it was restricted to 60km/hr. We then checked for categorical variable store_and_fwd_flag and passenger_count. We observed the store and fwd. flag contain majority of one category. So we drop this feature. Passenger count variable has entries from 0 to 9. Since there is no trips with 0 passenger either this a miss entry or the driver forgot to enter passenger count of that trip. Also in a taxi maximum six person are allowed to sit including minor. So we eliminate 0 and 7-9 records from our dataset. </br> 
+4. Feature Engineering - In feature engineering, feature encoding were performed of the some the variables which were found to be very improtant for our analysis. 
+5. Model Building & Evaluation- For model building I selected different regression models were I further applied hyperparameter tuning for optimizing our models and provide good accuracy. After getting the result R^2, adjusted R^2, MSE, RMSE scores were checked and compared using these evaluation metrics with test data. 
+6. Feature Importance - After evaluating our models, feature importance were also identified which showed "distance" to be the most important feature among all the given variables in dataset. 
 
 
 ## Model used in study 
@@ -31,7 +47,7 @@ The task is to build a model that predicts the total ride duration of taxi trips
 1. Linear Regression
 2. Lasso Regression
 3. Ridge Regression
-4. XGBoost Regression
+4. XGBoost Regression -  (Best score of test dataset for R^2 as well as adjusted R^2 value) </br> 
 5. Decision Tree Regression
 6. Random Forest Regression
 
